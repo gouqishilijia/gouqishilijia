@@ -1,0 +1,225 @@
+.zhuye {
+    width: 100%;
+    height: 100vh;
+
+    .css {
+        width: 800px;
+        height: 400px;
+        background-color: rgb(68, 213, 226);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+
+        .shicha {
+            width: 250px;
+            height: 250px;
+
+            .he {
+                width: 800px;
+                height: 50px;
+                // background-color: red;
+                position: absolute;
+                top: 0;
+                left: 0;
+                text-align: center;
+                font-size: 40px;
+
+                // box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                // transform: perspective(1px) translateZ(0);
+                &:hover,
+                &:focus,
+                &:active {
+                    animation-name: img;
+                    animation-duration: 0.3s;
+                    animation-timing-function: linear;
+
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    color: rgb(207, 45, 185);
+                }
+            }
+
+            @keyframes he {
+                to {
+                    transform: scale(1.1);
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                transform: perspective(1px) translateZ(0);
+
+                &:hover,
+                &:focus,
+                &:active {
+                    animation-name: img;
+                    animation-duration: 0.3s;
+                    animation-timing-function: linear;
+
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+            }
+
+            @keyframes img {
+                to {
+                    transform: scale(0.9);
+                }
+            }
+
+
+        }
+
+        .loading {
+            width: 250px;
+            height: 250px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                transform: perspective(1px) translateZ(0);
+
+                &:hover,
+                &:focus,
+                &:active {
+                    animation-name: img;
+                    animation-duration: 0.3s;
+                    animation-timing-function: linear;
+
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+            }
+
+            @keyframes img {
+                to {
+                    transform: scale(0.9);
+                }
+            }
+        }
+
+        .load {
+            width: 250px;
+            height: 250px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                transform: perspective(1px) translateZ(0);
+
+                &:hover,
+                &:focus,
+                &:active {
+                    animation-name: img;
+                    animation-duration: 0.3s;
+                    animation-timing-function: linear;
+
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+            }
+
+            @keyframes img {
+                to {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+
+    .html {
+        width: 800px;
+        height: 400px;
+        background-color: rgb(16, 164, 130);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .music {
+            width: 250px;
+            height: 250px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    transform: scale(0.8);
+                    transition: all .3s;
+                }
+            }
+        }
+
+        .tubiao {
+            width: 250px;
+            height: 250px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    transform: scale(0.8);
+                    transition: all .3s;
+                }
+            }
+        }
+    }
+
+    .booStrap {
+        width: 800px;
+        height: 400px;
+        background-color: rgb(17, 97, 154);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .zhengxing {
+            width: 250px;
+            height: 250px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    transform: scale(0.8);
+                    transition: all .3s;
+                }
+            }
+        }
+    }
+}
