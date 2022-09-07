@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="referrer" content="never" />
+    <link rel="stylesheet" href="./b站.css">
+</head>
+
+<body>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <div class="stage"> -->
+    <ul class="styleId">题材</ul>
+    <ul class="areaId">地区</ul>
+    <ul class="isFinish">进度</ul>
+    <ul class="isFree">收费</ul>
+    <ul class="order">排序</ul>
+    <!-- </div> -->
+    <div class="box"></div>
+    <script>
+        var filters = [
+            {
+                cateName: "题材",
+                cateKey: "styleId",
+                cates: [
+                    { text: "全部", code: -1 },
+                    { text: "热血", code: 999 },
+                    { text: "古风", code: 997 },
+                    { text: "玄幻", code: 1016 },
+                    { text: "奇幻", code: 998 },
+                    { text: "悬疑", code: 1023 },
+                    { text: "都市", code: 1002 },
+                    { text: "历史", code: 1096 },
+                    { text: "武侠仙侠", code: 1092 },
+                    { text: "游戏竞技", code: 1088 },
+                ],
+            },
+            {
+                cateName: "地区",
+                cateKey: "areaId",
+                cates: [
+                    { text: "全部", code: -1 },
+                    { text: "大陆", code: 1 },
+                    { text: "日本", code: 2 },
+                    { text: "韩国", code: 6 },
+                    { text: "其他", code: 5 },
+                ],
+            },
+            {
+                cateName: "进度",
+                cateKey: "isFinish",
+                cates: [
+                    { text: "全部", code: -1 },
+                    { text: "连载", code: 0 },
+                    { text: "完结", code: 1 },
+                ],
+            },
+            {
+                cateName: "收费",
+                cateKey: "isFree",
+                cates: [
+                    { text: "全部", code: -1 },
+                    { text: "免费", code: 1 },
+                    { text: "付费", code: 2 },
+                    { text: "等就免费", code: 3 },
+                ],
+            },
+            {
+                cateName: "排序",
+                cateKey: "order",
+                cates: [
+                    { text: "人气推荐", code: 0 },
+                    { text: "更新时间", code: 1 },
+                    { text: "追漫人数", code: 2 },
+                    { text: "上架时间", code: 3 },
+                ],
+            },
+        ];
+
+        var query = {
+            styleId: -1,
+            areaId: -1,
+            isFinish: -1,
+            isFree: -1,
+            order: 0,
+        };
+
+        filters.map((obj) => {
+            obj.cates.map((item) => {
+                if (obj.cateKey === "styleId") {
+                    $(".styleId").append('<li class =' + item.code + '>' + item.text + '</li>')
+                }
+                if (obj.cateKey === "areaId") {
+                    $(".areaId").append('<li class =' + item.code + '>' + item.text + '</li>')
+                }
+                if (obj.cateKey === "isFinish") {
+                    $(".isFinish").append('<li class =' + item.code + '>' + item.text + '</li>')
+                }
+                if (obj.cateKey === "isFree") {
+                    $(".isFree").append('<li class =' + item.code + '>' + item.text + '</li>')
+                }
+                if (obj.cateKey === "order") {
+                    $(".order").append('<li class =' + item.code + '>' + item.text + '</li>')
+                }
+            })
+        })
+
+
+        function xxxx() {
+            $.get(
+                "https://apis.netstart.cn/bcomic/ClassPage?", query,
+                function (res) {
+                    console.log(res);
+                    let { data } = res;
+                    console.log(data);
+                    $(".box").append(
+                        `${data
+                            .map(function (item) {
+                                return `
+                            <li class = "item">
+                                <img
+                                style="width:200px;height:300px"
+                                src="${item.vertical_cover}"
+                                alt=""
+                                />
+                                <h3>${item.title}</h3>
+                            </li>`;
+                            })
+                            .join("")}`
+                    )
+                }
+            )
+        }
+        xxxx()
+
+        $(".styleId li").click(function () {
+            $(".box").html(" ")
+            // console.log($(this).attr("class"));
+            query.styleId = Number($(this).attr("class"))
+            $(this).css({color: "red"}).siblings().css({color: "blue"})
+            xxxx();
+        })
+
+        $(".areaId li").click(function () {
+            $(".box").html(" ")
+            // console.log($(this).attr("class"));
+            query.areaId = Number($(this).attr("class"))
+            $(this).css({color: "red"}).siblings().css({color: "blue"})
+
+            xxxx();
+        })
+
+        $(".isFinish li").click(function () {
+            $(".box").html(" ")
+            // console.log($(this).attr("class"));
+            query.isFinish = Number($(this).attr("class"))
+            $(this).css({color: "red"}).siblings().css({color: "blue"})
+
+            xxxx();
+        })
+
+        $(".isFree li").click(function () {
+            $(".box").html(" ")
+            // console.log($(this).attr("class"));
+            query.isFree = Number($(this).attr("class"))
+            $(this).css({color: "red"}).siblings().css({color: "blue"})
+
+            xxxx();
+        })
+
+        $(".order li").click(function () {
+            $(".box").html(" ")
+            // console.log($(this).attr("class"));
+            query.order = Number($(this).attr("class"))
+            $(this).css({color: "red"}).siblings().css({color: "blue"})
+
+            xxxx();
+        })
+    </script>
+</body>
+
+</html>

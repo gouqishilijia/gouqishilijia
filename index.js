@@ -1,4 +1,3 @@
-
 var zuop = [
     {
         id: "js",
@@ -39,6 +38,12 @@ var zuop = [
         path: "./士力架/Jquery&ajax/三级联动.html",
         img: "./士力架/Jquery&ajax/imgs/三级联动.png",
         describe: "三级联动",
+    },
+    {
+        id: "jqajax",
+        path: "./士力架/Jquery&ajax/b站漫画.html",
+        img: "./士力架/Jquery&ajax/imgs/b站.png",
+        describe: "b站漫画",
     },
     {
         id: "js",

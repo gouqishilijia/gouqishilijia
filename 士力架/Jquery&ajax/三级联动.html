@@ -8,6 +8,14 @@
     <title>xpl</title>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
+        body {
+            background-image: url(/枸杞/士力架/img/R-C\ \(1\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
         ul {
             list-style: none;
             margin: 0;
@@ -76,7 +84,7 @@
                     $(this).css({
                         color: "red",
                     }).siblings().css({
-                        color: "black",
+                        color: "white",
                     })
                     // console.log(this);
                     // console.log($(this).data("id"));
@@ -94,7 +102,7 @@
                         $(this).css({
                             color: "red",
                         }).siblings().css({
-                            color: "black",
+                            color: "white",
                         })
                         for (let i = 0; i < id.length; i++) {
                             if (id[i].length == 6) {
