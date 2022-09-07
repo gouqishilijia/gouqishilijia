@@ -17,7 +17,7 @@ body {
     }
 
     .show {
-        width: 1320px;
+        width: 1340px;
         height: 100%;
         margin: 0 auto;
 
@@ -59,18 +59,22 @@ body {
         }
 
         .zuop {
-            width: 1320px;
+            width: 1340px;
             height: 100%;
             // background-color: red;
             margin: auto;
-            overflow: hidden;
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-wrap: wrap;
 
             .he {
                 width: 400px;
                 height: 420px;
-                float: left;
                 margin: 20px;
+                position: relative;
 
                 img {
                     width: 400px;
@@ -82,13 +86,21 @@ body {
 
                 }
 
-
-
                 p {
                     float: left;
-
                 }
+            }
 
+            &:hover {
+                
+                .mask {
+                    width: 400px;
+                    height: 420px;
+                    background-color: rgba(47, 132, 206, 0.585);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
 
             }
 
