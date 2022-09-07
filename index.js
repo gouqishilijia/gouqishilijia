@@ -84,6 +84,30 @@ var zuop = [
         img: "./士力架/img/html5/图表/图表.png",
         describe: "图表",
     },
+    {
+        id: "html",
+        path: "./士力架/HTML&CSS/整形.html",
+        img: "",
+        describe: "整形",
+    },
+    {
+        id: "html",
+        path: "./士力架/HTML&CSS/关于儿童.html",
+        img: "",
+        describe: "关于儿童",
+    },
+    {
+        id: "html",
+        path: "./士力架/HTML&CSS/携程.html",
+        img: "./士力架/HTML&CSS/image/Images/携程.png",
+        describe: "携程",
+    },
+    {
+        id: "html",
+        path: "./士力架/HTML&CSS/360.html",
+        img: "./士力架/HTML&CSS/img/360.png",
+        describe: "仿360浏览器",
+    },
 
 ]
 

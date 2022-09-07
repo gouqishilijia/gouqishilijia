@@ -1,0 +1,52 @@
+.header .swiper {
+  position: relative;
+}
+.header .swiper .headercontant {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  /* background-color: red; */
+}
+.header .swiper .wrapper .slide {
+  position: relative;
+}
+.header .swiper .wrapper .slide div {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  background-image: url(img/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .swiper .wrapper .slide h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.header .swiper .wrapper .slide p {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .swiper .wrapper .slide img .one {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .swiper .wrapper .slide img .two {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=./index.css.map */
