@@ -1,18 +1,26 @@
 body {
     background-color: rgb(13, 195, 195);
+    // background-image: url(./士力架/img/aa.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
 }
 
 .zhuye {
     width: 100%;
     height: 100%;
 
+
     .my {
+        width: 1340px;
+        margin: 0 auto;
+
         h1 {
             width: 100%;
             height: 100px;
-            text-align: center;
-            // background-color: pink;
+            // text-align: center;
             line-height: 100px;
+            font-size: 30px;
         }
     }
 
@@ -21,41 +29,60 @@ body {
         height: 100%;
         margin: 0 auto;
 
+
         .menu {
+            width: 1340px;
             margin: 15px 0;
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-end;
             align-items: center;
 
-            li {
-                display: inline-block;
-                width: 100px;
-                height: 50px;
-                background-color: brown;
-                border-radius: 10px;
-                text-align: center;
-                line-height: 50px;
-                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-                transform: perspective(1px) translateZ(0);
-
-                &:hover,
-                &:focus,
-                &:active {
-                    animation-name: li;
-                    animation-duration: 0.3s;
-                    animation-timing-function: linear;
-
-                    animation-iteration-count: infinite;
-                    animation-direction: alternate;
-                }
-
+            .introduce {
+                width: 25%;
+                height: 100px;
+                // background-color: red;
+                line-height: 100px;
+                font-size: 25px;
             }
 
-            @keyframes li {
-                to {
-                    transform: scale(0.9);
+            .men {
+                width: 75%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                    display: inline-block;
+                    width: 100px;
+                    height: 50px;
+                    margin-right: 5px;
+                    background-color: brown;
+                    border-radius: 8px;
+                    text-align: center;
+                    line-height: 50px;
+                    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                    transform: perspective(1px) translateZ(0);
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        animation-name: li;
+                        animation-duration: 0.3s;
+                        animation-timing-function: linear;
+
+                        animation-iteration-count: infinite;
+                        animation-direction: alternate;
+                    }
+
+                }
+
+                @keyframes li {
+                    to {
+                        transform: scale(0.9);
+                    }
                 }
             }
+
         }
 
         .zuop {
@@ -63,46 +90,54 @@ body {
             height: 100%;
             // background-color: red;
             margin: auto;
-
             display: flex;
             justify-content: center;
             align-items: center;
-
             flex-wrap: wrap;
 
-            .he {
-                width: 400px;
-                height: 420px;
-                margin: 20px;
-                position: relative;
 
-                img {
-                    width: 400px;
-                    height: 400px;
-                    border-radius: 15px;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
 
-                }
-
-                p {
-                    float: left;
-                }
+            .introduces {
+                width: 25%;
+                height: 800px;
+                background-color: yellowgreen;
             }
 
-            &:hover {
-                
-                .mask {
-                    width: 400px;
-                    height: 420px;
-                    background-color: rgba(47, 132, 206, 0.585);
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+            .showWork {
+                width: 75%;
+                height: 800px;
+                background-color: red;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .he {
+                    width: 295px;
+                    height: 295px;
+                    margin: 20px;
+                    position: relative;
+
+                    img {
+                        width: 295px;
+                        height: 295px;
+                        border-radius: 15px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+                    }
+
+                    p {
+                        float: left;
+                    }
                 }
 
             }
+
+
+
 
 
 
