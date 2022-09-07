@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>by@penGLIXIE</title>
+    <style>
+        #aaa {
+
+            width: 350px;
+            height: 40px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            box-shadow: 0 0 5px gray;
+            text-align: center;
+            line-height: 40px;
+        }
+        .wrapper {
+            width: 350px;
+            margin: 0 auto;
+        }
+
+        .wrapper .card {
+            width: 350px;
+            position: relative;
+          
+        }
+
+        .wrapper .card span {
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            color: white;
+            background-color: rgb(22, 186, 236);
+        }
+
+
+        .wrapper .card span:nth-child(4) {
+            position: relative;
+            left: 230px;
+        }
+
+        .wrapper .card span:nth-child(5) {
+            position: relative;
+            top: 110px;
+            left: 115px;
+        }
+
+        .wrapper .card span:nth-child(6) {
+            position: relative;
+            top: 110px;
+            left: -115px;
+        }
+
+        .wrapper .card span:nth-child(8) {
+            position: relative;
+            top: -110px;
+            left: -115px;
+        }
+
+        .wrapper .card span:nth-child(9) {
+            background-color: rgb(255, 148, 61);
+            position: relative;
+            top: -110px;
+            left: -115px;
+
+        }
+
+        .wrapper .card span.qq {
+            background-color: rgb(78, 78, 78);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="wrapper">
+            <p id="aaa"></p>
+            <div class="card">
+                <span>手机</span>
+                <span>平板</span>
+                <span>电磁炉</span>
+                <span>洗衣机</span>
+                <span>衣柜</span>
+                <span>冰箱</span>
+                <span>电脑</span>
+                <span>电视</span>
+                <span>开始</span>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var aaa = document.getElementById("aaa");
+        var spans = document.querySelectorAll(".card span");
+
+
+            function start() {
+                spans.forEach(function (spans, index) {
+                    if (index != 0) {
+                        spans.classList.remove("qq");
+                    }
+                });
+                aaa.textContent = "";
+                spans[8].style.cursor = "not-allowed";
+                spans[8].onclick = null;
+                var num = -1;
+                var rounds = parseInt(Math.random() * (30 - 18 + 1) + 18, 12)
+                var round = 0;
+            
+                timer = setInterval(function () {
+                    num++;
+                    round++;
+                    if (num > 7) {
+                        num = 0;
+                        spans[0].classList.add("qq");
+                        spans[7].classList.remove("qq");
+                    } else if (num == 0) {
+                        spans[num].classList.add("qq");
+                        spans[7].classList.remove("qq");
+                    } else {
+                        spans[num].classList.add("qq");
+                        spans[num - 1].classList.remove("qq");
+                    }
+                    if (round > rounds) {
+                        spans[8].onclick = start;
+                        spans[8].style.cursor = "pointer";
+                        clearInterval(timer);
+                        aaa.textContent = "恭喜你抽中了" + spans[num].textContent + "!!"
+                    }
+                }, 100);
+
+            }
+        spans[8].onclick = start;
+    </script>
+</body>
+
+</html>

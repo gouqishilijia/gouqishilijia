@@ -1,0 +1,547 @@
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.top {
+  background-color: #169696;
+  position: relative;
+  height: 1226px;
+}
+.top .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.top .wrapper .header {
+  overflow: hidden;
+  margin-top: 50px;
+}
+.top .wrapper .header .left {
+  width: 50%;
+  height: 100px;
+  float: left;
+}
+.top .wrapper .header .left h3 {
+  font-size: 30px;
+}
+.top .wrapper .header .right {
+  margin-top: 35px;
+  width: 50%;
+  float: right;
+  overflow: hidden;
+}
+.top .wrapper .header .right .di {
+  float: left;
+  width: 225px;
+  height: 50px;
+}
+.top .wrapper .header .right .di i.fa {
+  width: 30px;
+  height: 30px;
+}
+.top .wrapper .header .right .di span {
+  width: calc(100% - 30px);
+  float: right;
+  font-size: 10px;
+}
+.top .wrapper .header .right .time {
+  float: right;
+  width: 225px;
+  height: 50px;
+}
+.top .wrapper .header .right .time i.fa {
+  width: 30px;
+  height: 30px;
+}
+.top .wrapper .header .right .time span {
+  width: calc(100% - 30px);
+  float: right;
+  font-size: 10px;
+}
+.top .wrapper .nav {
+  width: 1000px;
+  height: 80px;
+  border: 3pX solid #5f5959;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: white;
+}
+.top .wrapper .nav .menu {
+  margin-top: 15px;
+  margin-left: 20px;
+  float: left;
+  width: calc(70% - 20px);
+}
+.top .wrapper .nav .menu ul.home {
+  padding: 5px;
+}
+.top .wrapper .nav .menu ul.home li {
+  float: left;
+  padding: 10px;
+}
+.top .wrapper .nav .menu ul.home li:first-child {
+  color: red;
+}
+.top .wrapper .nav .face {
+  margin-top: 15px;
+  width: 30%;
+  float: right;
+  height: 56px;
+}
+.top .wrapper .nav .face ul.fa {
+  margin-left: 95px;
+}
+.top .wrapper .nav .face ul.fa i.fa {
+  padding: 18px;
+}
+.top .wrapper .bring {
+  width: 250px;
+  height: 350px;
+  float: left;
+  top: calc(50% - 175px);
+  left: 0;
+  margin-top: 270px;
+}
+.top .wrapper .bring p {
+  color: red;
+  font-size: 15px;
+}
+.top .wrapper .bring h3 {
+  font-size: 35px;
+  font-weight: bolder;
+  color: white;
+}
+.top .wrapper .bring span {
+  font-size: 15px;
+}
+.top .wrapper .bring .btn {
+  margin-top: 30px;
+  width: 120px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.top .wrapper .super {
+  float: right;
+  width: 80%;
+  height: 1226px;
+  background-image: url(imgs/kid_transparent.png);
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  right: -295PX;
+  top: 0;
+}
+.indoor .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  height: 300px;
+  position: relative;
+  margin-top: 50px;
+}
+.indoor .wrapper ul.he {
+  margin-top: 50px;
+  overflow: hidden;
+}
+.indoor .wrapper ul.he .card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100;
+}
+.indoor .wrapper ul.he .card .text {
+  float: left;
+  width: 29%;
+  height: 170px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  background-color: red;
+  margin-left: 10px;
+}
+.indoor .wrapper ul.he .card .text i.fa {
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  background-color: red;
+  position: absolute;
+  left: 118px;
+  top: -29px;
+  color: white;
+  border-radius: 50px;
+}
+.indoor .wrapper ul.he .card .text h3 {
+  padding: 10px;
+}
+.indoor .wrapper ul.he .card .tex {
+  float: left;
+  width: 29%;
+  height: 170px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  background-color: #c3cf19;
+  margin-left: 10px;
+}
+.indoor .wrapper ul.he .card .tex i.fa {
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  background-color: #c3cf19;
+  position: absolute;
+  left: 118px;
+  top: -29px;
+  color: white;
+  border-radius: 50px;
+}
+.indoor .wrapper ul.he .card .tex h3 {
+  padding: 10px;
+}
+.indoor .wrapper ul.he .card .te {
+  float: left;
+  width: 29%;
+  height: 170px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  background-color: #1182cd;
+  margin-left: 10px;
+}
+.indoor .wrapper ul.he .card .te i.fa {
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  background-color: #1182cd;
+  position: absolute;
+  left: 118px;
+  top: -29px;
+  color: white;
+  border-radius: 50px;
+}
+.indoor .wrapper ul.he .card .te h3 {
+  padding: 10px;
+}
+.fun {
+  background-color: #d2e8e8;
+  height: 100%;
+}
+.fun .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 400px;
+}
+.fun .wrapper .left {
+  background-image: url(imgs/img_1.jpg);
+  width: 50%;
+  float: left;
+  height: 400px;
+}
+.fun .wrapper .right {
+  height: 400px;
+  float: right;
+  width: 40%;
+  margin-top: 20px;
+}
+.fun .wrapper .right span {
+  color: red;
+}
+.fun .wrapper .right h3 {
+  font-size: 30px;
+}
+.fun .wrapper .right .btn {
+  width: 200px;
+  height: 50px;
+  background-color: yellow;
+  color: black;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.pack {
+  background-color: #18779d;
+  height: 590px;
+}
+.pack .wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+.pack .wrapper .header {
+  width: 300px;
+  margin: 0 auto;
+}
+.pack .wrapper .low {
+  overflow: hidden;
+}
+.pack .wrapper .low .card {
+  text-align: center;
+  float: left;
+  width: 30%;
+  height: 400px;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 20px;
+}
+.pack .wrapper .low .card i.fa {
+  width: 200px;
+  height: 80px;
+  margin-top: 50px;
+}
+.pack .wrapper .low .card span {
+  color: #11c393;
+  padding: 60px;
+}
+.pack .wrapper .low .card .btn {
+  width: 150px;
+  height: 35px;
+  margin-top: 30px;
+  background-color: red;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.pricing .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.pricing .wrapper .pri {
+  width: 100%;
+  overflow: hidden;
+}
+.pricing .wrapper .pri .card {
+  float: left;
+  width: 25%;
+  height: 350px;
+  margin-left: 25px;
+}
+.pricing .wrapper .pri .card span {
+  color: red;
+}
+.pricing .wrapper .pri .buy {
+  float: left;
+  width: 30%;
+  height: 350px;
+  margin-left: 85px;
+}
+.pricing .wrapper .pri .buy span {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #12c79d;
+  border-radius: 50px;
+  background-color: #13c592;
+}
+.pricing .wrapper .pri .buy li {
+  line-height: 50px;
+}
+.pricing .wrapper .pri .buy .btn {
+  background-color: #23e4ba;
+  border-top-left-radius: 15px;
+  width: 100px;
+  height: 30px;
+  border-bottom-right-radius: 15px;
+  margin-top: 50px;
+}
+.pricing .wrapper .pri .now {
+  float: left;
+  width: 25%;
+  height: 350px;
+  margin-left: 10px;
+}
+.pricing .wrapper .pri .now span {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #12c79d;
+  border-radius: 50px;
+  background-color: #13c592;
+}
+.pricing .wrapper .pri .now li {
+  line-height: 50px;
+}
+.pricing .wrapper .pri .now .btn {
+  background-color: #23e4ba;
+  border-top-left-radius: 15px;
+  width: 100px;
+  height: 30px;
+  border-bottom-right-radius: 15px;
+  margin-top: 50px;
+}
+.our .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+.our .wrapper .header {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+.our .wrapper .header span {
+  color: red;
+}
+.our .wrapper .jie {
+  margin: 0 auto;
+  width: 500px;
+  height: 250px;
+  background-color: #fc3737;
+}
+.our .wrapper .jie .left {
+  float: left;
+}
+.our .wrapper .jie .left img {
+  padding: 30px;
+  width: 80px;
+  height: 80px;
+}
+.our .wrapper .jie .right {
+  margin-left: 10px;
+  width: 350px;
+  height: 200px;
+  float: right;
+}
+.our .wrapper .jie .right h3 {
+  color: white;
+}
+.our .wrapper .jie .right .Partner {
+  color: #bca0a0;
+}
+.our .wrapper .jie .right p {
+  color: white;
+}
+.our .wrapper .low {
+  padding: 50px;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+}
+.our .wrapper .low .card {
+  float: left;
+  margin-left: 20px;
+  text-align: center;
+}
+.our .wrapper .low .card span {
+  color: #27a17b;
+}
+.our .wrapper .low .car {
+  float: left;
+  margin-left: 50px;
+  text-align: center;
+}
+.our .wrapper .low .car span {
+  color: #d5860f;
+}
+.our .wrapper .low .ca {
+  float: left;
+  margin-left: 50px;
+  text-align: center;
+}
+.our .wrapper .low .ca span {
+  color: #6fc738;
+}
+.our .wrapper .low .c {
+  float: left;
+  margin-left: 50px;
+  text-align: center;
+}
+.our .wrapper .low .c span {
+  color: #df0e0e;
+}
+.life {
+  background-color: #d5e617;
+}
+.life .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  height: 80px;
+}
+.life .wrapper .lr {
+  height: 80px;
+  overflow: hidden;
+}
+.life .wrapper .lr h3 {
+  float: left;
+  color: white;
+  margin-top: 25px;
+}
+.life .wrapper .lr .btn {
+  float: right;
+  width: 120px;
+  height: 30px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #9c0f0f;
+  color: white;
+  margin-top: 25px;
+}
+.footer {
+  background-color: #171111;
+}
+.footer .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+.footer .wrapper .to {
+  overflow: hidden;
+}
+.footer .wrapper .to .left {
+  width: 400px;
+  height: 360px;
+  float: left;
+}
+.footer .wrapper .to .left .us {
+  width: 350px;
+  height: 350;
+  margin-top: 60px;
+}
+.footer .wrapper .to .left .us span {
+  color: red;
+}
+.footer .wrapper .to .left .us p {
+  margin-top: 20px;
+  color: white;
+}
+.footer .wrapper .to .left .us h6 {
+  margin-top: 30px;
+  color: red;
+}
+.footer .wrapper .to .left .se input {
+  width: 200px;
+  height: 30px;
+}
+.footer .wrapper .to .left .se .btn {
+  width: 60px;
+  height: 35px;
+  background-color: red;
+  border-radius: 20px;
+  color: white;
+}
+.footer .wrapper .to .right {
+  float: right;
+  color: white;
+}
+.footer .wrapper .to .right .card {
+  float: left;
+  width: 250px;
+  height: 360px;
+  margin-top: 60px;
+  line-height: 30px;
+}
+.footer .wrapper .to .right .card ul.con :nth-child(1) {
+  color: red;
+}
+.footer .wrapper .copy {
+  height: 150px;
+  border-top: 2px solid #af9f9f;
+  text-align: center;
+}
+.footer .wrapper .copy p {
+  color: white;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=./erdong.css.map */

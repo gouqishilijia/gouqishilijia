@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xpl</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            text-align: center;
+        }
+
+        .xpl {
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .xxx {
+            width: 168px;
+            height: 700px;
+            /* background-color: rgb(105, 193, 240); */
+        }
+
+        .ppp {
+            margin: 0 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xpl">
+        <ul class="xxx"></ul>
+        <ul class="ppp"></ul>
+        <ul class="lll"></ul>
+    </div>
+    <script>
+        var id = []
+        var dq = []
+
+        $.get({
+            url: "./1.json", success: function (aaa) {
+                console.log(aaa);
+                aaa.forEach(function (ele, i) {
+                    // console.log(typeof ele);
+                    // console.log(ele.split(":"));
+                    // var q = /\d/g;
+                    // console.log(ele.match(q).join(""));
+                    // var w = /\:\S*/g
+                    // console.log(ele.match(q).splice(":"));
+                    // $(".xxx").append(ele.split(":")[1])
+                    var gg = id.push(ele.split(":")[0])
+                    var jj = dq.push(ele.split(":")[1])
+                    // console.log(ele.split(":")[0]);
+                    // console.log(ele.split(":")[1]);
+                });
+                console.log(id);
+                // console.log(dq);
+
+                for (let i = 0; i < id.length; i++) {
+                    if (id[i].length == 2) {
+                        $(".xxx").append('<li data-id=' + id[i] + '>' + dq[i] + ' </li>')
+                    }
+                }
+                // console.log(typeof id);
+                $(".xxx li").click(function () {
+                    $(".ppp li").html(" ")
+                    $(".lll li").html(" ")
+                    $(this).css({
+                        color: "red",
+                    }).siblings().css({
+                        color: "black",
+                    })
+                    // console.log(this);
+                    // console.log($(this).data("id"));
+
+                    for (let i = 0; i < id.length; i++) {
+                        if (id[i].length == 4) {
+                            // console.log(id[i].slice(0, 2) == $(this).data("id"));
+                            if (id[i].slice(0, 2) == $(this).data("id")) {
+                                $(".ppp").append('<li data-id=' + id[i] + '>' + dq[i] + ' </li>')
+                            }
+                        }
+                    }
+                    $(".ppp li").click(function () {
+                        $(".lll li").html(" ")
+                        $(this).css({
+                            color: "red",
+                        }).siblings().css({
+                            color: "black",
+                        })
+                        for (let i = 0; i < id.length; i++) {
+                            if (id[i].length == 6) {
+                                // console.log(id[i].slice(0, 2) == $(this).data("id"));
+                                if (id[i].slice(0, 4) == $(this).data("id")) {
+                                    $(".lll").append('<li data-id=' + id[i] + '>' + dq[i] + ' </li>')
+                                }
+                            }
+                        }
+                    })
+                })
+            }
+        }) 
+    </script>
+</body>
+
+</html>
