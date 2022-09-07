@@ -76,7 +76,7 @@ var zuop = [
     {
         id: "hfive",
         path: "/士力架/HTML5/图表.html",
-        img: "/士力架/img/html5//图表/图表.png",
+        img: "/士力架/img/html5/图表/图表.png",
         describe: "图表",
     },
 
