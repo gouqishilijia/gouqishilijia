@@ -92,14 +92,8 @@ var zuop = [
     {
         id: "html",
         path: "./士力架/HTML&CSS/整形.html",
-        img: "",
+        img: "./士力架/HTML&CSS/imgs/整形.png",
         describe: "整形",
-    },
-    {
-        id: "html",
-        path: "./士力架/HTML&CSS/关于儿童.html",
-        img: "",
-        describe: "关于儿童",
     },
     {
         id: "html",
